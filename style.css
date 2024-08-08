@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+
+  --veryDarkBlue: hsl(233, 47%, 7%);
+  --darkDesaturatedBlue: hsl(244, 38%, 16%);
+  --softViolet: hsl(277, 64%, 61%);
+  --darkerViolet: #6b00b3;
+
+  --white: hsl(0, 0%, 100%);
+  --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
+
+  --inter: "Inter", sans-serif;
+  --lexendDeca: "Lexend", sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--veryDarkBlue);
+  font-family: var(--lexendDeca);
+}
+
+h1 {
+  font-family: var(--inter);
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: var(--lexendDeca);
+  margin: 5px 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--inter);
+  color: var(--slightlyTransparentWhite);
+  line-height: 1.6rem;
+  font-size: 15px;
+  padding-right: 50px;
+}
+
+span {
+  
+  color: var(--slightlyTransparentWhite);
+}
+
+.imageContainer {
+  background-color: var(--darkerViolet);
+}
+
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  border-radius: 0 5px 5px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.marker {
+  color: var(--softViolet);
+}
+
+.card {
+  background-color: var(--darkDesaturatedBlue);
+  padding: 50px;
+  border-radius: 5px 0 0 5px;
+  width: 500px;
+  color: var(--white);
+}
+
+.cardsText {
+  display: flex;
+  font-family: var(--lexendDeca);
+  justify-content: space-between;
+  margin: 50px 0;
+  padding-right: 70px;
+  align-items: center;
+}
+
+.cardInfo {
+  font-size: 0.8rem;
+  font-family: var(--inter);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+  h1 {
+    padding: 0 15px;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .imageContainer {
+    width: 400px;
+  }
+
+  .cardsText {
+    display: block;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .cardStats div {
+    margin: 30px 0;
+  }
+
+  .imageContainer img {
+    display: block;
+    width: 100%;
+  }
+  
+
+  .flexContainer {
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+
+ 
+
+
+}
